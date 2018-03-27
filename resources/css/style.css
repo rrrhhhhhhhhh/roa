@@ -1,0 +1,106 @@
+body, html {
+  margin: 0;
+  font-family: "futura-pt", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  height: 100%;
+  min-width: 900px;
+}
+
+.logo {
+}
+
+.wrapper{
+  height: 100%;
+  display: flex;
+}
+
+/* .header {
+  height: 10px;
+} */
+
+.content {
+  margin-top: 70px;
+  display: flex;
+  flex: 1;
+  background: #FFFFFF;
+  color: #000;
+}
+.columns{
+  display: flex;
+  flex:1;
+  justify-content: center;
+  flex-direction: row;
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 270px;
+  height: 865px;
+  order: 2;
+  background: #FFFFFF;
+  margin: 86px 40px 0 40px;
+}
+
+.left-column{
+  display: block;
+  width: 220px;
+  height: 465px;
+  background: #FFFFFF;
+  order: 1;
+  text-align: right;
+}
+.right-column{
+  display: block;
+  width: 298px;
+  height: 385px;
+  order: 3;
+  background: #FFFFFF;
+  margin: 80px 0 0 0;
+}
+
+.image-container {
+  display: flex;
+  width: 270px;
+  margin-top: 30px;
+}
+
+.headshot-eric,
+.headshot-susie,
+.headshot-aaron {
+  width: 128px;
+  height: 300px;
+}
+
+.headshot-eric {
+  margin-right: 14px;
+}
+
+.headshot-aaron {
+  margin-top: 14px;
+  margin-left: -142px;
+}
+
+/*
+--------------------------
+media queries
+--------------------------
+*/
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    background-color: lightblue;
+      }
+
+  .columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex:3;
+    background-color: red;
+  }
+
+}
