@@ -11,7 +11,7 @@ body, html {
 .logo {
 }
 
-.wrapper{
+ .wrapper{
   height: 100%;
   display: flex;
 }
@@ -23,18 +23,21 @@ body, html {
 .content {
   margin-top: 70px;
   display: flex;
+  justify-content: center;
   flex: 1;
   background: #FFFFFF;
   color: #000;
 }
+
 .columns{
   display: flex;
-  flex:1;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
 }
-.main{
-  display: flex;
+
+.middle{
+  display: block;
   flex-wrap: wrap;
   flex-direction: column;
   width: 270px;
@@ -42,23 +45,30 @@ body, html {
   order: 2;
   background: #FFFFFF;
   margin: 86px 40px 0 40px;
+  background: green;
+  flex-basis:270px;
 }
 
-.left-column{
+.left{
   display: block;
   width: 220px;
-  height: 465px;
+  height: 510px;
   background: #FFFFFF;
   order: 1;
   text-align: right;
+  background:red;
+  flex-basis:220px;
 }
-.right-column{
+
+.right{
   display: block;
   width: 298px;
   height: 385px;
   order: 3;
   background: #FFFFFF;
   margin: 80px 0 0 0;
+  background:yellow;
+  flex-basis:298px;
 }
 
 .image-container {
@@ -89,18 +99,57 @@ media queries
 --------------------------
 */
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width:600px) {
 
-  body {
-    background-color: lightblue;
-      }
-
-  .columns {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex:3;
-    background-color: red;
+  .wrapper {
+    justify-content: center;
+    flex-basis: 100%;
+    width:490px;
+    height: 100%
   }
 
+  .content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 490px;
+    margin-top: 70px;
+    position: fixed;
+    overflow: scroll;
+    background-color: lightblue;
+  }
+
+  .columns {
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .left {
+    order:1;
+    margin-top: 686px;
+  }
+
+  .middle {
+    margin: 40px 0 0 0;
+    height: 920px;
+    order:2;
+    display: block;
+  }
+
+  .image-container {
+    display: flex;
+    width: 270px;
+    height: 530px;
+    margin-top: 30px;
+    background-color: purple;
+
+  }
+
+  .right {
+    margin: 40px 0 140px 0;
+    order:3;
+  }
 }
