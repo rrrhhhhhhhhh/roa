@@ -1,6 +1,6 @@
 body, html {
   margin: 0;
-  font-family: "futura-pt", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt-bold", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
@@ -8,7 +8,7 @@ body, html {
   min-width: 900px;
 }
 
- /* @font-face {
+ @font-face {
   font-family: "futura-pt";
   src: url("../fonts/futura-pt.woff") format("woff2");
 }
@@ -16,7 +16,13 @@ body, html {
   @font-face {
     font-family: "futura-pt-bold";
     src: url("../fonts/futura-pt-bold.woff") format("woff2");
-} */
+}
+
+@font-face {
+  font-family: "futura-pt-bold";
+  src: url("../fonts/futura-pt-demi.woff") format("woff2");
+  font-weight: 700;
+}
 
 a {
   text-decoration: none;
