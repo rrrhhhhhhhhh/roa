@@ -8,14 +8,15 @@ body, html {
   min-width: 900px;
 }
 
-@font-face {
+ /* @font-face {
   font-family: "futura-pt";
-  src: url("futura-pt.woff") format("woff2");
-  src: url("futura-pt-bold.woff") format("woff2");
-
-  font-weight: normal;
-  font-style: normal;
+  src: url("../fonts/futura-pt.woff") format("woff2");
 }
+
+  @font-face {
+    font-family: "futura-pt-bold";
+    src: url("../fonts/futura-pt-bold.woff") format("woff2");
+} */
 
 a {
   text-decoration: none;
@@ -72,6 +73,7 @@ a {
   flex-basis:220px;
   font-weight: 400;
   letter-spacing: 1px;
+
 }
 
 .right{
@@ -105,11 +107,8 @@ a {
   margin-left: -142px;
 }
 
-.name-bold {
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  font-family: "futura-pt-bold", sans-serif;
+#name-bold {
+  font-weight: bolder;
 }
 
 .headshot-eric {
