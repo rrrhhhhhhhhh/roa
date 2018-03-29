@@ -10,10 +10,11 @@ body, html {
 
 @font-face {
   font-family: "futura-pt";
-  src: url("./resources/fonts/futura-pt.woff") format("woff2");
-}
+  src: url("../fonts/futura-pt.woff") format("woff2");
+  src: url("../fonts/futura-pt-bold.woff") format("woff2");
 
-.logo {
+  font-weight: normal;
+  font-style: normal;
 }
 
 a {
@@ -57,6 +58,7 @@ a {
   margin: 86px 40px 0 40px;
   /* background: green; */
   flex-basis:270px;
+  letter-spacing: 1px;
 }
 
 .left{
@@ -68,6 +70,8 @@ a {
   text-align: right;
   /* background:red; */
   flex-basis:220px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .right{
@@ -79,6 +83,8 @@ a {
   margin: 80px 0 0 0;
   /* background:yellow; */
   flex-basis:298px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .image-container {
@@ -94,13 +100,35 @@ a {
   height: 300px;
 }
 
+.headshot-aaron {
+  margin-top: 14px;
+  margin-left: -142px;
+}
+
+.name-bold {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "futura-pt-bold", sans-serif;
+}
+
 .headshot-eric {
   margin-right: 14px;
 }
 
-.headshot-aaron {
-  margin-top: 14px;
-  margin-left: -142px;
+.copyright {
+  color:#9c9c9c;
+  font-size:13px;
+}
+
+.quote {
+  font-size:20px;
+  line-height:30px;
+  letter-spacing: 1px;
+}
+
+.attribution {
+font-size:13px;
 }
 
 /*
@@ -114,7 +142,7 @@ media queries
   .wrapper {
     justify-content: center;
     flex-basis: 100%;
-    width:490px;
+    width:485px;
     height: 100%
   }
 
@@ -122,7 +150,7 @@ media queries
     height: 100%;
     display: flex;
     justify-content: center;
-    width: 490px;
+    width: 485px;
     margin-top: 70px;
     position: fixed;
     overflow: scroll;
@@ -140,12 +168,12 @@ media queries
   .left {
     order:1;
     text-align: left;
-    margin-top: 766px;
+    margin-top: 828px;
   }
 
   .middle {
     margin: 40px 0 0 0;
-    height: 920px;
+    height: 865px;
     order:2;
     display: block;
   }
