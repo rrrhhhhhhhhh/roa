@@ -10,8 +10,8 @@ body, html {
 
 @font-face {
   font-family: "futura-pt";
-  src: url("./fonts/futura-pt.woff") format("woff2");
-  src: url("./fonts/futura-pt-bold.woff") format("woff2");
+  src: url("futura-pt.woff") format("woff2");
+  src: url("futura-pt-bold.woff") format("woff2");
 
   font-weight: normal;
   font-style: normal;
