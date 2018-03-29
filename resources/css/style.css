@@ -10,7 +10,7 @@ body, html {
 
 @font-face {
   font-family: "futura-pt";
-  src: url("futura-pt.woff") format("woff2"),
+  src: url("./resources/fonts/futura-pt.woff") format("woff2");
 }
 
 .logo {
