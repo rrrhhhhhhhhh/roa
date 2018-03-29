@@ -10,8 +10,8 @@ body, html {
 
 @font-face {
   font-family: "futura-pt";
-  src: url("../fonts/futura-pt.woff") format("woff2");
-  src: url("../fonts/futura-pt-bold.woff") format("woff2");
+  src: url("./fonts/futura-pt.woff") format("woff2");
+  src: url("./fonts/futura-pt-bold.woff") format("woff2");
 
   font-weight: normal;
   font-style: normal;
@@ -168,7 +168,7 @@ media queries
   .left {
     order:1;
     text-align: left;
-    margin-top: 828px;
+    margin-top: 856px;
   }
 
   .middle {
@@ -188,7 +188,7 @@ media queries
   }
 
   .right {
-    margin: 40px 0 140px 0;
+    margin: 32px 0 140px 0;
     order:3;
   }
 }
