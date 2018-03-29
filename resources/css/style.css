@@ -8,7 +8,17 @@ body, html {
   min-width: 900px;
 }
 
+@font-face {
+  font-family: "futura-pt";
+  src: url("futura-pt.woff") format("woff2"),
+}
+
 .logo {
+}
+
+a {
+  text-decoration: none;
+  color: #1772b5;
 }
 
  .wrapper{
