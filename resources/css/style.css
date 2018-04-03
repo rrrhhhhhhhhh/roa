@@ -24,6 +24,12 @@ body, html {
   font-weight: 700;
 }
 
+@font-face {
+  font-family: "futura-pt-bold";
+  src: url("../fonts/futura-pt-heavy.woff") format("woff2");
+  font-weight: 700;
+}
+
 a {
   text-decoration: none;
   color: #1772b5;
@@ -115,6 +121,7 @@ a {
 
 #name-bold {
   font-weight: bolder;
+  font-size: 16px;
 }
 
 .headshot-eric {
@@ -134,6 +141,10 @@ a {
 
 .attribution {
 font-size:13px;
+}
+
+.footer-m {
+  display: none;
 }
 
 /*
@@ -172,15 +183,19 @@ media queries
 
   .left {
     order:1;
-    text-align: left;
-    margin-top: 856px;
+    text-align: right;
+    margin-top: 867px;
+    /* background-color:lightgreen; */
+    /* width: 270px; */
+    height: 300px;
   }
 
   .middle {
-    margin: 40px 0 0 0;
+    margin: 55px 0 0 0;
     height: 865px;
     order:2;
     display: block;
+    /* background-color:red; */
   }
 
   .image-container {
@@ -193,7 +208,21 @@ media queries
   }
 
   .right {
-    margin: 32px 0 140px 0;
+    margin: 22px 0 140px 0;
     order:3;
+    /* background-color: lightblue; */
+    height: 600px;
+  }
+
+  .footer-d{
+    display: none;
+  }
+
+  .footer-m{
+    display: block;
+    /* font-weight: 400; */
+    /* letter-spacing: 1px; */
+    font-size: 16px;
+    line-height: 20px;
   }
 }
